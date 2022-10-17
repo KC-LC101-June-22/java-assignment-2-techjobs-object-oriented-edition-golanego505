@@ -52,9 +52,14 @@ public class JobTest {
         Job test_job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String data = test_job.toString();
         int length = data.length();
+
+        assertEquals("\n", "\n");
+        assertEquals("\n", "\n");
+
         assertEquals(data.substring(0,1), "\n");
         assertEquals(data.substring(length - 1, length), "\n");
     }
+
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
         Job test_job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
