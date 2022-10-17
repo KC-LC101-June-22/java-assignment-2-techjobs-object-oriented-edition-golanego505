@@ -69,7 +69,7 @@ public class JobTest {
     }
     @Test
     public void testToStringHandlesEmptyField() {
-        Job test_job = new Job("Product tester", new Employer(), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        Job test_job = new Job("Product tester", new Employer(""), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String data = test_job.toString();
         //System.out.println(data);
         assertEquals(data, "\nID: 3\n" + "Name: Product tester\n" +
