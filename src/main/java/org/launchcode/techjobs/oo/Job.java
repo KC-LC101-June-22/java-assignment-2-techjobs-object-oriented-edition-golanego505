@@ -111,7 +111,7 @@ public class Job {
             coreCompetency = "Data not available";
         }else coreCompetency = getCoreCompetency().getValue();
 
-        return ("\nID: " + getId() + "\nName: " + name + "\nEmployer: " + employer + "\nLocation: " + location + "\nPosition Type: " + positionType + "\nCore Competency: " + coreCompetency + "\n");
+        return ("\n" + "ID: " + getId() + "\nName: " + name + "\nEmployer: " + employer + "\nLocation: " + location + "\nPosition Type: " + positionType + "\nCore Competency: " + coreCompetency + "\n");
     }
 
 }
