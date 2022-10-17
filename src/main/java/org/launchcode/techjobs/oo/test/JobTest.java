@@ -1,6 +1,5 @@
 package org.launchcode.techjobs.oo.test;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -54,11 +53,8 @@ public class JobTest {
         String data = test_job.toString();
         int length = data.length();
 
-        Assert.assertEquals(data.substring(0,1), "\n");
-        Assert.assertEquals(data.substring(length - 1, length), "\n");
-
-//        assertEquals(data.substring(0,1), "\n");
-//        assertEquals(data.substring(length - 1, length), "\n");
+        assertEquals(data.substring(0,1).charAt(0), '\n');
+        assertEquals(data.substring(length - 1, length).charAt(0), '\n');
     }
 
     @Test
